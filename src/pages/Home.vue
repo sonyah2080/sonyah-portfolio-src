@@ -25,5 +25,5 @@
   }
 </script>
 <style lang="scss">
-
+@import './Home.scss'
 </style>
