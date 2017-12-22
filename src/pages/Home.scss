@@ -7,11 +7,14 @@ $border:solid #fff 1px;
 //nav&jumbo
 div {
   .container-fluid {
-    background : url(".././assets/background_v_b.png") no-repeat;
+    background : url("../../static/background_v_b.png") no-repeat;
     background-size: cover;
     .jumbotron {
       background: transparent;
-
+      img {
+        width: 250px;
+        margin: 50px;
+      }
     }
   }
 
@@ -32,44 +35,60 @@ div {
 
 //Profile
 div {
-    .profile {
-      width: 255px;
-      text-align: left;
-      border: $border;
-      color: $font-color;
-      padding: 10px;
-      img {
-        border-radius: 50%;
-        width: 74px;
-        height: 74px;
-      }
-      .name {
-        padding-left: 25px;
-        padding-top: 10px;
-        h5 {font-size: $font-size + 6;} //18px
-        p {font-size: $font-size;}
-      }
-
-      h6 {padding-top: 10px;}
-      .scope {
-        p {font-size: $font-size;}
-      }
+  .intro {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .profile {
+    width: 255px;
+    text-align: left;
+    color: $font-color;
+    padding: 10px;
+    img {
+      border-radius: 50%;
+      width: 74px;
+      height: 74px;
+    }
+    .name {
+      padding-left: 25px;
+      padding-top: 10px;
+      h5 {font-size: $font-size + 6;} //18px
+      p {font-size: $font-size;}
     }
 
-    .skill_l {
-      border: $border;
+    h6 {padding-top: 10px;}
+    .scope {
+      p {font-size: $font-size;}
     }
-
-    .skill_r {
-      border: $border;
-    }
+  }
 }
 
+//skill
+div {
+  .skill_l{
+    padding: 10px;
+    align-self: center;
+    img {
+      width: 80%;
+    }
+  }
+  .skill_r { @extend .skill_l; }
+}
 
 // Experience
 div {
   .exper {
     padding : 100px 0;
     img {width: 100%;}
+  }
+}
+
+//Contact
+div {
+  .contact {
+    font-size:$font-size +2;
+    color: $font-color;
+    * {vertical-align: middle;}
+    padding-bottom: 100px;
   }
 }

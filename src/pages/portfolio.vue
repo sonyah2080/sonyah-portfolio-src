@@ -3,7 +3,7 @@
     <div class="container">
       <b-navbar toggleable="md" variant="faded" type="white">
         <a href="#">
-          <img id="logo" src=".././assets/sonyah_logo.png">
+          <img id="logo" src="../../static/sonyah_logo.png">
         </a>
 
         <b-collapse is-nav id="nav-collapse">
@@ -18,14 +18,14 @@
       </b-navbar>
 
       <b-jumbotron class="jumbotron">
-        <img src=".././assets/jumbo.png" />
+        <img src="../../static/jumbo.png" />
       </b-jumbotron>
 
-      <div class="intro bv-row" md="12">
+      <div class="intro bv-row">
         <b-row>
           <b-col class="profile" md="4">
             <b-row>
-              <b-col md="4" align-self="center" ><img src=".././assets/profile.png" /></b-col>
+              <b-col md="4" align-self="center" ><img src="../../static/profile.png" /></b-col>
               <b-col md="8" align-self="center" class="name">
                 <h5>Soye Park</h5>
                 <p>UX/UI Designer</p>
@@ -47,21 +47,34 @@
           </b-col>
 
           <b-col md="4" class="skill_l">
-            dfndf
+            <img src="../../static/skill_1.svg" />
           </b-col>
 
           <b-col md="4" class="skill_r">
-
-            dfndf
+            <img src="../../static/skill_2.svg" />
           </b-col>
         </b-row>
       </div>
 
       <div class="exper">
-        <img src=".././assets/exper.png" />
+        <img src="../../static/exper.svg" />
       </div>
 
       <div class="pofol">
+        <lightbox
+          id="mylightbox"
+          :images="images"
+          :image_class=" 'img-responsive img-rounded' "
+          :album_class=" 'my-album-class' "
+          :options="options">
+        </lightbox>
+      </div>
+
+      <div class="contact">
+        <h5>Contact Me</h5>
+        <p><icon name="phone" scale="1" ></icon> <span> 010 2090 7747</span></p>
+        <p><icon name="envelope-o" scale="1"></icon><span> noixp9@gmail.com</span></p>
+        <p><icon name="instagram" scale="1"></icon><span> sonyah_2080</span></p>
       </div>
 
     </div>
@@ -69,58 +82,32 @@
 </template>
 
 <script>
+import p3YesCarImg from 'static/pofol_list/P3_yescar.png'
+import Lightbox from 'vue-simple-lightbox'
+
 export default {
-  name: 'portfolio',
+  components: {
+    Lightbox
+  },
   data () {
     return {
-      pofol: [{
-        name: 'yescar',
-        img: '.././assets/pofol_list/P3_yescar.png'
-      }, {
-        name: 'dareum',
-        img: '.././assets/pofol_list/P4_dareum.png'
-      }, {
-        name: 'enumnet',
-        img: '.././assets/pofol_list/P5_enumnet.png'
-      }, {
-        name: 'enumcut Prototyping',
-        img: '.././assets/pofol_list/P6_enumcut_prototytping.png'
-      }, {
-        name: 'enumcut design',
-        img: '.././assets/pofol_list/P7_enumcut_design.png'
-      }, {
-        name: 'kaiem',
-        img: '.././assets/pofol_list/P8_kaiem.png'
-      }, {
-        name: 'lubycon',
-        img: '.././assets/pofol_list/P9_Lubycon.png'
-      }, {
-        name: 'travailler',
-        img: '.././assets/pofol_list/P10_Travailler.png'
-      }, {
-        name: 'enumnet leaflet',
-        img: '.././assets/pofol_list/P11_enumnet)leaflet.png'
-      }, {
-        name: 'hyunjin',
-        img: '.././assets/pofol_list/P12_Hyunjin.png'
-      }, {
-        name: 'PPT 1',
-        img: '.././assets/pofol_list/P12_PPT.png'
-      }, {
-        name: 'PPT 2',
-        img: '.././assets/pofol_list/P13_PPT.png'
-      }, {
-        name: 'samduk',
-        img: '.././assets/pofol_list/P14_Samduk.png'
-      }, {
-        name: 'Youtube',
-        img: '.././assets/pofol_list/P15_Youtube.png'
-      }, {
-        name: 'artwork',
-        img: '.././assets/pofol_list/P16_artwork.png'
-      }]
+      images: [
+        {
+          src: p3YesCarImg,
+          title: 'Yescar'
+        },
+        {
+          src: p3YesCarImg,
+          title: 'Yescar'
+        }
+      ],
+      options: {
+        closeText: 'X',
+        swipeClose: true
+      }
     }
   }
+
 }
 </script>
 
