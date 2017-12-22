@@ -1,6 +1,7 @@
 <template lang="html">
   <div class="container-fluid">
     <div class="container">
+      <!--
       <b-navbar toggleable="md" variant="faded" type="white">
         <a href="#">
           <img id="logo" src="../../static/sonyah_logo.png">
@@ -8,7 +9,7 @@
 
         <b-collapse is-nav id="nav-collapse">
           <b-navbar-nav class="ml-auto">
-            <!--right align item-->
+
             <b-nav-item href="#">Home</b-nav-item>
             <b-nav-item href="#">Profile</b-nav-item>
             <b-nav-item href="#">Portfolio</b-nav-item>
@@ -16,6 +17,9 @@
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
+     -->
+
+
 
       <b-jumbotron class="jumbotron">
         <img src="../../static/jumbo.png" />
@@ -23,7 +27,7 @@
 
       <div class="intro bv-row">
         <b-row>
-          <b-col class="profile" md="4">
+          <b-col class="profile col-7 col-sm-4 col-md-4">
             <b-row>
               <b-col md="4" align-self="center" ><img src="../../static/profile.png" /></b-col>
               <b-col md="8" align-self="center" class="name">
@@ -33,11 +37,11 @@
             </b-row>
 
             <b-row>
-              <b-col md="12"><h6>Work_Scope</h6></b-col>
+              <b-col class="col-sm-6 col-md-4 col-6"><h6>Work_Scope</h6></b-col>
             </b-row>
 
             <b-row>
-              <b-col sm="12" class="scope">
+              <b-col class="scope col-sm-12">
                 <p>
                 #UX/UI_Design #Branding_Design #Graphic_Design #Pictography
                 #BI/CI_Design #Prototyping #HTML #CSS
@@ -46,11 +50,11 @@
             </b-row>
           </b-col>
 
-          <b-col md="4" class="skill_l">
+          <b-col class="skill_l col-md-4 col-sm-4 col-7">
             <img src="../../static/skill_1.svg" />
           </b-col>
 
-          <b-col md="4" class="skill_r">
+          <b-col class="skill_r col-md-4 col-sm-4 col-7">
             <img src="../../static/skill_2.svg" />
           </b-col>
         </b-row>
