@@ -1,9 +1,75 @@
-ul {
-  li {
-    img {
-      $size: 80px;
-      width: $size;
-      height: $size;
+$font-color: #fff;
+$font-size: 12px;
+$border:solid #fff 1px;
+
+* {margin: 0; padding: 0;}
+
+//nav&jumbo
+div {
+  .container-fluid {
+    background : url(".././assets/background_v_b.png") no-repeat;
+    background-size: cover;
+    .jumbotron {
+      background: transparent;
+
     }
+  }
+
+  .container {
+    a{
+      color: $font-color;
+      img {
+        width: 70px;
+        height: 100%;
+      }
+    }
+    b-nav-item {
+      padding: 5px;
+    }
+  }
+
+}
+
+//Profile
+div {
+    .profile {
+      width: 255px;
+      text-align: left;
+      border: $border;
+      color: $font-color;
+      padding: 10px;
+      img {
+        border-radius: 50%;
+        width: 74px;
+        height: 74px;
+      }
+      .name {
+        padding-left: 25px;
+        padding-top: 10px;
+        h5 {font-size: $font-size + 6;} //18px
+        p {font-size: $font-size;}
+      }
+
+      h6 {padding-top: 10px;}
+      .scope {
+        p {font-size: $font-size;}
+      }
+    }
+
+    .skill_l {
+      border: $border;
+    }
+
+    .skill_r {
+      border: $border;
+    }
+}
+
+
+// Experience
+div {
+  .exper {
+    padding : 100px 0;
+    img {width: 100%;}
   }
 }
