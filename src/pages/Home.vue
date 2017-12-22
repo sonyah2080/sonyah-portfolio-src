@@ -19,8 +19,6 @@
       </b-navbar>
      -->
 
-
-
       <b-jumbotron class="jumbotron">
         <img src="../../static/jumbo.png" />
       </b-jumbotron>
